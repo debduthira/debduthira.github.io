@@ -43,7 +43,29 @@
   </div>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import {getAnalytics} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAA-fP_sk_fjkoJ_c3bTCPmRI9GsfD-66s",
+      authDomain: "hotel-management-with-ui.firebaseapp.com",
+      projectId: "hotel-management-with-ui",
+      storageBucket: "hotel-management-with-ui.appspot.com",
+      messagingSenderId: "488934272050",
+      appId: "1:488934272050:web:b50a8208bb8fee0b88e02b",
+      measurementId: "G-CKE5DD1521"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 
 </html>
